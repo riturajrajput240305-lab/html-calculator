@@ -1,0 +1,78 @@
+.container {
+    /* 1. Enable Flexbox to put items side-by-side */
+    display: flex;
+    flex-direction: row; 
+    
+    /* 2. Adjust width so both calculator and history fit */
+    width: 100%; 
+    height: 100vh;
+    color: white;
+    background-color: black; /* Ensure background is consistent */
+}
+body{
+    background-color: black;
+}
+.vertical{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+}
+.symbol {
+    background-color: rgb(27, 36, 35);
+    color: white;
+    /* 3. Sizing: Use flex-grow or fixed dimensions instead of huge padding */
+    width: 18.30vw; 
+    height: 10.41vh;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none; /* Removes default button border */
+    cursor: pointer;
+
+    /* 4. CENTERING TRICK: This puts the text exactly in the middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    transition: background-color 0.2s;
+}
+input {
+    background-color: black;
+    color: white;
+    height: 30vh;
+    width: 100%; /* Fills the container width */
+    font-size: 50px;
+    text-align: right;
+    border: none;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.num{
+    background-color: rgb(45, 59, 58);
+}
+
+.symbol:hover {
+    background-color: rgb(70, 85, 84);
+}
+.symbol:active {
+    background-color: rgb(37, 44, 44);
+}
+.history {
+text-align: center;
+}
+.operator{
+    font-size: 25px;
+}
+
+.equal{
+    background-color: rgb(63, 124, 63);
+}
+
+#backspace{
+    background-color: rgb(233, 85, 85);
+}
+#backspace:hover{
+    background-color: rgb(209, 57, 57);
+}
+#backspace:active{
+    background-color: rgb(58, 51, 51);
+}
